@@ -24,6 +24,144 @@
       "tools": "tools"
     }
   },
+  "nsfw_eval": {
+    "file_name": "nsfw_eval.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "prod_convo_32k": {
+    "hf_hub_url": "EverAI-AI/long_context_32k_max_convo",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "grok_convo_train": {
+    "hf_hub_url": "EverAI-AI/Isabella-Grok-8k",
+    "split": "train",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "grok_convo_test": {
+    "hf_hub_url": "EverAI-AI/Isabella-Grok-8k",
+    "split": "test",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "raven_no_format_dpo": {
+    "hf_hub_url": "Raven-Pro/no_format_dpo",
+    "ranking": true,
+    "columns": {
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "flammenai_casual_dpo": {
+    "hf_hub_url": "flammenai/casual-conversation-DPO",
+    "ranking": true,
+    "columns": {
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "jondurbin_truthy_dpo": {
+    "hf_hub_url": "jondurbin/truthy-dpo-v0.1",
+    "ranking": true,
+    "columns": {
+      "system": "system",
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "weyaxi_humanish_dpo": {
+    "hf_hub_url": "Undi95/Weyaxi-humanish-dpo-project-noemoji",
+    "ranking": true,
+    "columns": {
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "swipes_dpo_train": {
+    "hf_hub_url": "EverAI-AI/llmv3-swipes-dpo",
+    "split": "train",
+    "formatting": "sharegpt",
+    "ranking": true,
+    "columns": {
+      "messages": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "swipes_dpo_test": {
+    "hf_hub_url": "EverAI-AI/llmv3-swipes-dpo",
+    "split": "test",
+    "formatting": "sharegpt",
+    "ranking": true,
+    "columns": {
+      "messages": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "gryphe_sonnet_roleplay": {
+    "hf_hub_url": "Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "undi95_r1_rp_sharegpt": {
+    "hf_hub_url": "Undi95/R1-RP-ShareGPT3",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
   "mllm_demo": {
     "file_name": "mllm_demo.json",
     "formatting": "sharegpt",
